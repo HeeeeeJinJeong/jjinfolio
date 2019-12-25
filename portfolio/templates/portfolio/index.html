@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}JJinFolio{% endblock %}
+
+{% block content %}
+{% load static %}
+
+{% include 'portfolio/nav.html' %}
+
+{% include 'portfolio/about.html' %}
+
+{% include 'portfolio/skill.html' %}
+
+{% include 'portfolio/project.html' %}
+
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up">Top</i></a>
+<div id="preloader"></div>
+
+{% endblock %}

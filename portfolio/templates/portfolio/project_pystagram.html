@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}PyStagram Project{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top mb-5" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="/">JJinFolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+    </div>
+</nav>
+
+<!--/ Section Blog-Single Star /-->
+<section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="post-box">
+                    <h3 class="text-center">PyStagram (<a href="http://pystagram.jjjinnn.com/photo/">Link</a>)</h3>
+                    <div class="article-content">
+                        <p>
+                            인스타그램 클론 프로젝트 입니다.<br>
+                            인스타그램 클론 코딩을 통해서 주요 기능들에 대해 학습하며 구현해보았습니다<br>
+                            로그인 상황에 따른 회원가입, 로그인, 수정 및 삭제 등 분기하였고 <br>
+                            필터 기능을 적용하여 좋아요, 본인이 올린 글을 볼 수 있도록 하였습니다.<br>
+                            댓글기능도 구현하였습니다.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="post-thumb">
+                        <img src="{% static 'img/py_main.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/py_upload.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/py_comment.png' %}" class="img-fluid mb-2" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">주요 기능</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>사진 업로드</li>
+                            <li>좋아요 기능</li>
+                            <li>코멘트 기능</li>
+                            <li>업로드 하거나, 좋아요 글 모아보기</li>
+                            <li>태그 기능</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">서버</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>AWS RDS</li>
+                            <li>Amazon S3</li>
+                            <li>Amazon EC2</li>
+                            <li>Amazon Cloud9</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">적용기술</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>Python</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Blog-Single End /-->
+{% endblock %}

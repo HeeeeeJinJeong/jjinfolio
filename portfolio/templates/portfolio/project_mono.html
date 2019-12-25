@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Studio Project MONOGROUND{% endblock %}
+
+
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top mb-5" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="/">JJinFolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+    </div>
+</nav>
+
+<!--/ Section Blog-Single Star /-->
+<section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="post-box">
+                    <h3 class="text-center">MONOGROUND Studio (<a href="http://mono.jjjinnn.com/">Link</a>)</h3>
+                    <div class="article-content">
+                        <p>
+                            렌탈 스튜디오 웹사이트입니다.<br>
+                            장고를 배우면서 튜토리얼이나 클론이 아닌, 설계부터 디자인까지 직접 진행한 프로젝트 입니다.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="post-thumb">
+                        <img src="{% static 'img/main.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/reservation.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/calendar.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/naverapi.png' %}" class="img-fluid mb-2" alt="">
+                        <img src="{% static 'img/modal.png' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">주요 기능</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>
+                                <a href="#">예약 글쓰기</a>
+                            </li>
+                            <li>
+                                <a href="#">캘린더 구현</a>
+                            </li>
+                            <li>
+                                <a href="#">일정 상세페이지 구현</a>
+                            </li>
+                            <li>
+                                <a href="#">디테일 페이지 구현</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 지도 API 이용</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">서버</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>
+                                <a href="#">AWS RDS</a>
+                            </li>
+                            <li>
+                                <a href="#">Amazon S3</a>
+                            </li>
+                            <li>
+                                <a href="#">Amazon EC2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-sidebar">
+                    <h5 class="sidebar-title">적용기술</h5>
+                    <div class="sidebar-content">
+                        <ul class="list-sidebar">
+                            <li>
+                                <a href="#">Python</a>
+                            </li>
+                            <li>
+                                <a href="#">Django</a>
+                            </li>
+                            <li>
+                                <a href="#">Naver OpenAPI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Blog-Single End /-->
+{% endblock %}

@@ -1,0 +1,76 @@
+{% load static %}
+
+<!--/ Section Blog Star /-->
+<section id="project" class="blog-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        PROJECT
+                    </h3>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-blog">
+                    <div class="card-img">
+                        <a href="{% url 'portfolio:mono' %}"><img src="{% static 'img/main.png' %}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category-box">
+                            <div class="card-category">
+                                <h6 class="category">Rental Studio</h6>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="{% url 'portfolio:mono' %}">Studio MONOGROUND</a></h3>
+                        <p class="card-description">
+                            Rental Studio Website
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-blog">
+                    <div class="card-img">
+                        <a href="blog-single.html"><img src="{% static 'img/py_main.png' %}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category-box">
+                            <div class="card-category">
+                                <h6 class="category">Website Cloning</h6>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="{% url 'portfolio:pystagram' %}">PyStagram</a></h3>
+                        <p class="card-description">
+                            Instagram Cloning Project
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-blog">
+                    <div class="card-img">
+                        <a href="blog-single.html"><img src="{% static 'img/mall_main.png' %}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category-box">
+                            <div class="card-category">
+                                <h6 class="category">Shopping Mall</h6>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="{% url 'portfolio:jjinmall' %}">JJinMall</a></h3>
+                        <p class="card-description">
+                            Shopping Project
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Blog End /-->
