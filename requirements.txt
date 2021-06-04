@@ -1,6 +1,6 @@
 boto3==1.9.209
 botocore==1.12.209
-Django==2.2.4
+Django==2.2.21
 django-storages==1.7.1
 docutils==0.15.2
 jmespath==0.9.4
